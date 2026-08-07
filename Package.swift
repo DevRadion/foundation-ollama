@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "foundation-ollama",
     platforms: [
-        .macOS("27.0"),
+        .macOS("26.0"),
         .macCatalyst("27.0"),
         .iOS("27.0"),
         .watchOS("27.0"),
