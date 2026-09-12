@@ -125,8 +125,6 @@ extension Transcript {
                 @unknown default:
                     throw unsupported(entry)
                 }
-            case .custom:
-                throw unsupported(entry)
             @unknown default:
                 throw unsupported(entry)
             }

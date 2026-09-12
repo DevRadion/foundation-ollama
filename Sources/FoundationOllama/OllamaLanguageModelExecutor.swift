@@ -252,7 +252,7 @@ public struct OllamaLanguageModelExecutor: LanguageModelExecutor, Sendable {
         }
 
         if chunk.done, let lastEntry = state.lastEntry {
-            let metadata: [String: any Sendable & Codable & Equatable] = [
+            let metadata: [String: any ConvertibleToGeneratedContent] = [
                 "model": chunk.model.rawValue,
                 "requestID": requestID,
             ]
